@@ -78,8 +78,8 @@ export default function Home() {
                   Real-time Events
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-md">
-                  Track every user interaction as it happens. Sub-second
-                  ingestion with zero sampling across every plan.
+                  Track interactions as they happen. Sub-second ingestion with
+                  zero sampling across every plan.
                 </p>
                 {/* Mini visualization */}
                 <div className="mt-6 flex items-end gap-1 h-16">
