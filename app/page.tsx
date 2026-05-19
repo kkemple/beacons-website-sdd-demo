@@ -27,13 +27,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/blog"
+              href="/blok"
               className="inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors text-sm"
             >
               Read the Blog
             </Link>
             <a
-              href="https://github.com/vercel/examples/tree/main/cdn/api-proxy-rewrite"
+              href="https://github.com/beacon-analytics/beacn-sdk"
               className="inline-flex items-center justify-center border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors text-sm"
             >
               View Source

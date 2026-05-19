@@ -147,7 +147,7 @@ export default function BlogPage() {
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-4 lg:grid-cols-3 gap-5">
           {loading
             ? Array.from({ length: 9 }).map((_, i) => <SkeletonCard key={i} />)
             : posts?.map((post) => <PostCard key={post.id} post={post} />)}

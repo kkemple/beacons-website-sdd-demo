@@ -67,7 +67,7 @@ export default function PricingPage() {
             <div className="mb-8">
               <h3 className="text-sm font-medium text-indigo-500 uppercase tracking-wide mb-4">Pro</h3>
               <div className="flex items-baseline gap-1">
-                <span className="text-5xl font-bold text-gray-900 dark:text-white tracking-tight">$29</span>
+                <span className="text-5xl font-bold text-gray-900 dark:text-white tracking-tight">$79</span>
                 <span className="text-gray-500 dark:text-gray-400">/mo</span>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">For growing teams</p>
@@ -124,7 +124,7 @@ export default function PricingPage() {
               </li>
             </ul>
             <Link
-              href="/"
+              href="/contact"
               className="w-full inline-flex items-center justify-center border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors text-sm"
             >
               Contact sales

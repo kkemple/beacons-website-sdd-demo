@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="border-b border-gray-200/60 dark:border-gray-800/60 bg-white/70 dark:bg-[#09090b]/70 backdrop-blur-xl sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
-          <Link href="/" className="flex items-center gap-2.5 font-semibold text-gray-900 dark:text-white">
+          <Link href="/" aria-label="" className="flex items-center gap-2.5 font-semibold text-gray-900 dark:text-white">
             <div className="relative">
               <svg className="w-5 h-5 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="9" r="2" fill="currentColor" />
