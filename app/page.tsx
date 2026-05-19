@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/blok"
+              href="/blog"
               className="inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors text-sm"
             >
               Read the Blog
@@ -118,13 +118,12 @@ export default function Home() {
                 Funnel Analysis
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                See where users drop off. Optimize conversion paths with
-                step-by-step breakdowns.
+                Visualize conversion paths and identify where users drop off.
               </p>
             </div>
 
-            {/* Small card - Custom Dashboards */}
-            <div className="md:col-span-2 group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-8 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+            {/* Medium card - Session Replay */}
+            <div className="md:col-span-3 group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-8 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
               <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center mb-5">
                 <svg
                   className="w-5 h-5 text-emerald-500"
@@ -136,111 +135,57 @@ export default function Home() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                    d="M15.75 10.5V6.75a3.75 3.75 0 0 0-7.5 0v3.75m-3 0h13.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5Z"
                   />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Custom Dashboards
+                Session Replay
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                Build dashboards tailored to your team with drag-and-drop
-                widgets and live data.
+                Watch real user sessions to understand behavior and debug issues
+                faster.
               </p>
             </div>
 
-            {/* Large card - Team Collaboration */}
-            <div className="md:col-span-4 group relative rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-8 overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-              <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-emerald-500/5 to-transparent rounded-br-full" />
-              <div className="relative">
-                <div className="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center mb-5">
-                  <svg
-                    className="w-5 h-5 text-amber-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Team Collaboration
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-md">
-                  Share insights across teams with role-based access,
-                  annotations, and configurable alerts. Everyone stays in the
-                  loop.
-                </p>
+            {/* Medium card - A/B Testing */}
+            <div className="md:col-span-3 group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-8 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-orange-50 dark:bg-orange-500/10 flex items-center justify-center mb-5">
+                <svg
+                  className="w-5 h-5 text-orange-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 8.25h18M4.5 6h15a1.5 1.5 0 0 1 1.5 1.5v11.25A1.5 1.5 0 0 1 19.5 20.25h-15A1.5 1.5 0 0 1 3 18.75V7.5A1.5 1.5 0 0 1 4.5 6Z"
+                  />
+                </svg>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Code Example */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-8">
-            <p className="text-sm font-medium text-indigo-500 dark:text-indigo-400 mb-3 tracking-wide uppercase">
-              Developer Experience
-            </p>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Start tracking in minutes
-            </h3>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-950 overflow-hidden">
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800">
-              <div className="flex gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-gray-700" />
-                <div className="w-3 h-3 rounded-full bg-gray-700" />
-                <div className="w-3 h-3 rounded-full bg-gray-700" />
-              </div>
-              <span className="text-xs text-gray-500 font-mono ml-2">
-                app.ts
-              </span>
-            </div>
-            <div className="p-6 overflow-x-auto">
-              <pre className="text-sm text-gray-300 font-mono leading-relaxed">
-                {`import Beacon from '@beacon/sdk';
-
-const beacon = new Beacon('pk_live_...');
-
-// Track a page view
-beacon.track('page_view', {
-  path: '/pricing',
-  referrer: document.referrer
-});
-
-// Track a conversion event
-beacon.track('subscription_started', {
-  plan: 'pro',
-  interval: 'monthly',
-  value: 29
-});`}
-              </pre>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                A/B Testing
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                Run controlled experiments and measure impact with statistical
+                confidence.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Explore the blog
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
-            Read the latest posts from the Beacon team, served through an
-            external API proxied via a rewrite defined in{" "}
-            <code className="text-base bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded font-mono">
-              vercel.ts
-            </code>
-            .
+            Learn how to proxy APIs at the edge, keep secrets server-side, and
+            build safer frontends with practical guides.
           </p>
           <Link
             href="/blog"
